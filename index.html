@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Chat Application</title>
+
+    <script type='text/template' id='htmlTemplate'>
+        <li class="list-group-item"> 
+            <span class='user-name'> <%=user%> </span>
+            <span class='user-message'><%=message%> </span>
+        </li>
+
+    </script>
+
+    <!-- import css -->
+    <link href="src/libs//bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
+
+    <!-- import libraries -->
+    <script src="src/libs/jquery-1.10.2.js" ></script>
+    <script src="src/libs/bootstrap.js" ></script>
+    <script src="src/libs/underscore-min.js" ></script>
+    <script src="src/libs/backbone-min.js" ></script>
+
+    <!-- import code -->
+    <script src="src/scripts.js" ></script>
+
+</head>
+
+<body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">Chat App</h3>
+      </div>
+      <div class="jumbotron">
+        <ul class="list-group"></ul>
+      </div>
+     <div class="container2">
+        <textarea class="form-control"></textarea>
+        <a class="btn btn-primary">Send</a>
+
+
+
+     </div>
+      <div class="row marketing"></div>
+      <div class="footer"></div>
+      <footer>
+        <p>Ignacio Villar &copy; 2013</p>
+      </footer>
+    </div>
+    
+  </body>
+
+</html>
